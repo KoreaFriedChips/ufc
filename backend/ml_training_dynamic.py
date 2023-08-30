@@ -5,6 +5,7 @@ import lightgbm as lgb
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
+import seaborn as sns
 import matplotlib.pyplot as plt
 
 data = pd.read_csv("dynamicfightstats.csv")
@@ -112,8 +113,14 @@ feature_importance_df = pd.DataFrame(
 
 feature_importance_df = feature_importance_df.sort_values("Importance", ascending=False)
 
-# python matplot to show feature importance
+# python matplot a correlation heatmap
+# correlation_matrix = data[selected_columns].corr()
+# plt.figure(figsize=(12, 8))
+# sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm", center=0)
+# plt.title("Correlation Heatmap")
+# plt.show()
 
+# python matplot to show feature importance
 # plt.figure(figsize=(10, 6))
 # plt.barh(feature_importance_df["Feature"], feature_importance_df["Importance"])
 # plt.xlabel("Importance")

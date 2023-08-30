@@ -9,16 +9,16 @@ Accuracy: 0.59
 0                   11                  7                    2   
 
    opponent_kd_differential  opponent_str_differential  \
-0                 -0.142857                  -7.285714   
+0                  0.357143                  38.464286   
 
    opponent_td_differential  opponent_sub_differential  opponent_winrate  \
-0                 -0.285714                   0.428571               0.5   
+0                 -0.571429                       0.25              0.75   
 
    opponent_winstreak  opponent_totalfights  opponent_totalwins  \
-0                   0                    14                   7   
+0                   2                    28                  21   
 
    opponent_titlefights  fighter_dob  opponent_dob   result predicted_result  \
-0                     2         1991          1987  unknown             loss   
+0                     9         1991          1991  unknown             loss   
 
    probability_draw  probability_loss  probability_nc  probability_win  
-0          0.000008          0.610305        0.001401         0.388286  
+0          0.000013          0.867547        0.004576         0.127864  
