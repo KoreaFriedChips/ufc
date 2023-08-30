@@ -121,9 +121,9 @@ feature_importance_df = feature_importance_df.sort_values("Importance", ascendin
 # plt.show()
 
 # python matplot to show feature importance
-# plt.figure(figsize=(10, 6))
-# plt.barh(feature_importance_df["Feature"], feature_importance_df["Importance"])
-# plt.xlabel("Importance")
-# plt.ylabel("Feature")
-# plt.title("Feature Importance")
-# plt.show()
+plt.figure(figsize=(10, 6))
+plt.barh(feature_importance_df["Feature"], feature_importance_df["Importance"])
+plt.xlabel("Importance")
+plt.ylabel("Feature")
+plt.title("Feature Importance")
+plt.show()
